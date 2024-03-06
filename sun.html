@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SUN</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <li><a href="index.html">
+        <img src="logosp.jpg" alt="Logo" class="logo">
+        </a></li>
+    <div class="sun-title">
+        <h1>SUN</h1>
+    </div>
+
+    <div class="sun-images">
+        <img src="sun1.jpeg" alt="Sun Image 1">
+        <img src="sun2.webp" alt="Sun Image 2">
+        <img src="sun3.jpg" alt="Sun Image 3">
+        <img src="sun4.jpg" alt="Sun Image 4">
+        <img src="sun5.jpg" alt="Sun Image 5">
+        <img src="sun6.jpg" alt="Sun Image 6">
+        <img src="sun7.jpeg" alt="Sun Image 7">
+    </div>
+    <div class="sun-3d-model">
+        <iframe width="100%" height="480" src="https://sketchfab.com/models/519dddb6998545e2bf84225394dc71fe/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+    </div>
+    <div class="sun-info">
+        <h2>About the Sun</h2>
+        <p>
+            The Sun is the star at the center of the Solar System. It is a nearly perfect sphere of hot plasma,
+            with internal convective motion that generates a magnetic field via a dynamo process.
+            The Sun is by far the most important source of energy for life on Earth.
+        </p>
+        <p>The Sun is a luminous, celestial body that serves as the central and dominant source of energy for the solar system. It is a
+             G-type main-sequence star, commonly referred to as a yellow dwarf, and is located at the heart of our solar system. The Sun's
+              immense gravitational pull keeps all the planets, including Earth, in orbit around it.</p>
+
+           <p>With a diameter of about 1.4 million kilometers, the Sun is approximately 109 times the diameter of Earth.
+             Its mass is around 330,000 times that of Earth, accounting for about 99.86% of the total mass of the entire solar system. 
+             The Sun is primarily composed of hydrogen (about 74% by mass) and helium (about 24% by mass), with trace amounts of heavier
+              elements.</p>
+            
+            <p>The Sun's energy is produced through a process called nuclear fusion that occurs in its core. High temperatures and pressures
+                 in the core cause hydrogen atoms to fuse and form helium, releasing an enormous amount of energy in the process.
+                  This energy, in the form of light and heat, is then radiated into space, providing the necessary conditions for
+                   life on Earth.</p>
+            
+            <p>The Sun's surface, known as the photosphere, has an average temperature of about 5,500 degrees Celsius (9,932 degrees 
+                Fahrenheit). Sunspots, cooler and darker areas on the photosphere, are caused by the Sun's magnetic activity and occur
+                 in cycles that last approximately 11 years.</p>
+            
+           <p>Beyond the photosphere, the Sun has outer layers such as the chromosphere and the corona. The corona, extending millions of
+             kilometers into space, is visible during solar eclipses. Despite its high temperature, the corona's energy is spread out,
+              making it appear faint compared to the photosphere.</p>
+            
+            <p>Solar flares and coronal mass ejections (CMEs) are powerful and sometimes disruptive events on the Sun. These phenomena
+                 release vast amounts of energy and charged particles into space, impacting the Earth's magnetosphere and causing
+                  geomagnetic storms.</p>
+            
+           <p>The Sun has a profound influence on the Earth's climate and weather. The solar energy it emits drives the planet's 
+            atmospheric and oceanic circulation patterns, influencing temperature, wind, and precipitation. Understanding the Sun's
+             behavior is crucial for predicting space weather and mitigating potential impacts on technological systems.</p>
+            
+            <p>In conclusion, the Sun is a fascinating and essential celestial body that sustains life on Earth through its energy output.
+                 Its intricate processes, dynamic behavior, and significant influence on our solar system make it a subject of continual 
+                 scientific exploration and discovery.</p>
+        <div class="sun-info-background"></div>
+    </div>
+</body>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Century Gothic', sans-serif; 
+}
+.logo {
+    position: absolute;
+    top: 19px; 
+    left: 15px;
+    width: 80px; 
+    height: auto;
+    z-index: 1000; 
+}
+.sun-title {
+    text-align: center;
+    background: #000; 
+    color: gold; 
+    padding: 20px;
+}
+
+.sun-images {
+    display: flex;
+    overflow: hidden;
+}
+
+@keyframes scrollImages {
+    0% {
+        transform: translateX(0);
+    }
+    33.33% {
+        transform: translateX(-100%);
+    }
+    66.66% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.sun-images img {
+    width: 300px;
+    margin-right: 10px;
+    animation: scrollImages 10s linear infinite; 
+}
+
+.sun-info {
+    text-align: center;
+    padding: 50px;
+    position: relative;
+}
+
+.sun-info-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('sunwaall.webp') center/cover; 
+    opacity: 0.5; 
+    z-index: -1;
+}
+
+.sun-info h2 {
+    color: #fff; 
+}
+.sun-3d-model {
+    margin: 20px 0;
+}
+.sun-info p {
+    width: 80%;
+    margin-top: 10px;
+    text-align: justify; 
+    clear: both;
+    margin-left: 120px;
+}
+
+
+
+
+
+</style>
+</html>
+
+
