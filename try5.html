@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VR 360 Website</title>
+</head>
+
+<body>
+    <iframe src="https://skybox.blockadelabs.com/e/425533e4e2abc9820bb28622484b4462" width=1519 height=719 style="border:0;" allow="fullscreen"></iframe>
+    <script>
+        // Wait for the iframe to load
+        window.onload = function () {
+            // Get the iframe element
+            var iframe = document.querySelector('iframe');
+
+            // Wait for the iframe content to load
+            iframe.onload = function () {
+                // Replace the image URL in the iframe
+                iframe.contentDocument.querySelector('input[type="file"]').setAttribute('data-img-upload-url', 'YOUR_IMAGE_URL');
+            };
+        };
+    </script>
+</body>
+
+</html>
+
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website Title</title>
+</head>
+<body>
+    <li><a href="index.html">
+        <img src="logosp.jpg" alt="Logo" class="logo">
+        </a></li>
+    <div class="container">
+            <h1>INFINITE HORIZONS: SPACE VR</h1>
+        <div class="buttons">
+            <button class="decorative-button"><a href="try.html">FUTURE MARS</a></button>
+            <button class="decorative-button"><a href="try2.html">RED PLANET</a></button>
+            <button class="decorative-button"><a href="try3.html">FUTURE EARTH</a></button>
+            <button class="decorative-button"><a href="try4.html">FUTURE SPACE SHIP</a></button>
+            <button class="decorative-button"><a href="try5.html">PRESENT EARTH</a></button>
+            <button class="decorative-button"><a href="try6.html">CYBERPUNK</a></button>
+            <button class="decorative-button"><a href="try7.html">ALIEN PLANET</a></button>
+        </div>
+    </div>
+</body>
+<style>
+    body {
+    margin: 0;
+    padding: 0;
+    background-image: url('vrwallpaper.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    overflow: hidden;
+}
+.logo {
+    position: fixed;
+    top: 10px; 
+    left: 10px;
+    width: 80px; 
+    height: auto;
+    z-index: 1000; 
+}
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.container h1{
+    flex: 1;
+    text-align: center;
+    padding: 25vh 20px; 
+    box-sizing: border-box;
+    color: blue;
+    overflow-y: auto;
+    font-size: 80PX;
+}
+
+.buttons {
+    flex: 0 0 100px; /* Fixed width for the button section */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.decorative-button {
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+</style>
+</html>
+
+
